@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="root">
+			</div>
+		</div>
+		<script src="assets/js/app.js"></script>
+		
+		<script>
+
+			var options = {
+				playlist: [
+					{
+						videoSrc: "assets/img/sing.mp4",
+						coverImgSrc: "http://static.srcdn.com/wp-content/uploads/2016/11/Sing-Movie-Animals.jpg",
+						title: "The Expanse",
+						subtitle: "S2.E3 Static",
+						description: "Miller’s plan new plan could change the solar system, while Earth’s fate may be in the hands of an enemy."
+					},
+					{
+						videoSrc: "assets/img/secret-life-of-pets-trailer3.mp4",
+						coverImgSrc: "assets/img/secret-life-of-pets-poster.jpg",
+						title: "Pets the movie Trailer",
+						subtitle: "In Theaters July 8",
+						description: "The quiet life of a terrier named Max is upended when his owner takes in Duke, a stray whom Max instantly dislikes."
+					}
+				],
+				initialPlaylistIndex: 0,
+				aspectRatio: 1280/692,
+				endCardShowTime: 12,
+				playNextDelay: 5,
+				controlBarHoverTimeout: 2,
+				endCardLinks: [
+					{
+						text: "Some link 1",
+						url: "http://blah.com"
+					},
+					{
+						text: "Some link 2",
+						url: "http://blah.com"
+					}
+				]
+			}
+
+			window.mountPlayer(options, document.getElementById('root'));
+
+		</script>
+	</body>
+</html>
